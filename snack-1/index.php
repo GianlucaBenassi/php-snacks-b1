@@ -30,3 +30,25 @@ $games= [
 ];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack-1 - Basket</title>
+</head>
+<body>
+    
+    <h1>Basketball games:</h1>
+    <ul>
+        <?php
+            for ($i = 0; $i < count($games); $i++) {
+                echo "<li>{$games[$i]['homeTeam']} - {$games[$i]['visitingTeam']} | {$games[$i]['homePoint']}-{$games[$i]['visitingPoint']}</li>";
+            }
+        ?>
+    </ul>
+
+</body>
+</html>
